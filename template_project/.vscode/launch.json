@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run SFML app",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/app",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "DYLD_LIBRARY_PATH",
+          "value": "${workspaceFolder}/../SFML/lib"
+        }
+      ],
+      "MIMode": "lldb"
+    }
+  ]
+}
