@@ -1,23 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "game.h"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(400, 300), "SFML Test");
+    Game::get_instance().init();
 
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear(sf::Color::Black);
-        window.display();
-    }
-
-    std::cout << "SFML is working!" << std::endl;
     return 0;
 }

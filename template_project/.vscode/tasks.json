@@ -8,6 +8,7 @@
       "args": [
         "src/*.cpp",
         "-std=c++17",
+        "-g",
         "-I", "include/",
         "-I", "../SFML/include",
         "-L", "../SFML/lib",
